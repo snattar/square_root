@@ -1,0 +1,5 @@
+{
+  "name": "Soppe Ganit - Square Root Visualizer",
+  "description": "An interactive educational application that visualizes square roots geometrically. It features an AI tutor powered by Gemini to explain math concepts, generate quizzes, and provide text-to-speech explanations in Marathi.",
+  "requestFramePermissions": []
+}
