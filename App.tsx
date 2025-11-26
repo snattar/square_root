@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Header } from './components/Header';
 import { ControlPanel } from './components/ControlPanel';
 import { AITutor } from './components/AITutor';
@@ -78,8 +80,11 @@ export default function App() {
   const isRemainderComplete = userPlacedCount >= remainder;
 
   return (
-    <div className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800">
-      <div className="max-w-7xl mx-auto space-y-6">
+    <>
+      <Analytics />
+      <SpeedInsights />
+      <div className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800">
+        <div className="max-w-7xl mx-auto space-y-6">
         
         <Header />
 
@@ -153,7 +158,8 @@ export default function App() {
             </div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
